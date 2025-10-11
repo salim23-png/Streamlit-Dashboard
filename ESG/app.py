@@ -6,6 +6,7 @@ import numpy as np
 import plotly.express as px
 import streamlit as st
 import plotly.graph_objects as go
+import os
 # ------------
 # 1️⃣ Page Setup
 # ------------
@@ -17,9 +18,13 @@ st.title("ESG & Financial Performance")
 # 2️⃣ Load Data
 # ------------
 try:
-    df = pd.read_csv("company_esg_financial_dataset.csv")
+    base_dir = os.path.dirname(__file__)
+    file_path = os.path.join(base_dir, "company_esg_financial_dataset.csv")
+
+    df = pd.read_csv(file_path)
+
 except FileNotFoundError:
-    st.error("❗ File 'company_esg_financial_dataset.csv' Not Found")
+    st.error("❗ File 'company_esg_financial_dataset.csv' Not Found. Pastikan file ada di folder ESG dan sudah di-push ke GitHub.")
     st.stop()
 # ------------
 # 3️⃣ Add KPI Metrics
