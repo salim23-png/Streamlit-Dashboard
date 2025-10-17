@@ -6,6 +6,7 @@ import plotly.express as px
 import plotly.colors as pc
 import plotly.graph_objects as go
 import us
+import os
 
 # set page config
 st.set_page_config(
@@ -18,7 +19,9 @@ st.set_page_config(
 # load data
 @st.cache_data(ttl=3600)
 def load_data():
-    data = pd.read_csv("shopping_trends_updated.csv")
+    current_dir = os.path.dirname(__file__)
+    csv_path = os.path.join(current_dir, "shopping_trends_updated.csv")
+    data = pd.read_csv(csv_path)
     data = data.drop(columns="Frequency of Purchases", axis=1)                         # delete the frequency of purchases column because we don't use it, unless we need it for segmentation
     data["Difference Amount"] = data["Purchase Amount (USD)"] - data["Previous Purchases"]    # define difference amount column
     data["State Code"] = data["Location"].map(                                              # Make a column from state/location abbreviation 
