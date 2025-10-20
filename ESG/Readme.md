@@ -4,27 +4,43 @@ This project utilizes a dataset from Kaggle titled "ESG & Financial Performance 
 
 ## 🔄 Project Workflow
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": { "primaryColor": "#ddeeff", "secondaryColor": "#e0f7ea", "tertiaryColor": "#fffbe6" } }}%%
 flowchart LR
-  %% Baris atas: Notebook (warna biru muda)
-  A[Raw Data]:::notebook --> B[Data Preprocessing]:::notebook
-  B --> C[Data Cleaning]:::notebook
-  C --> D[Exploratory Data Analysis]:::notebook
-  D --> E[Train-Test Split]:::notebook
-  E --> F[Model Selection & Hyperparameter Tuning]:::notebook
-  F --> G[Build Final Predictive Model]:::notebook
-  G --> H[Model Evaluation]:::notebook
-  H --> I[Clustering Analysis with K-Means]:::notebook
-
-  %% Transisi
-  I -.-> J[Visualization & Insights]:::app
-
-  %% Baris bawah: App/Deployment (warna hijau muda)
-  J --> K[Streamlit App Development]:::app
-  K --> L[Interactive Dashboard Deployment]:::app
-
-  %% Definisi styling kelas
-  classDef notebook fill:#cfeaff,stroke:#2672b2,stroke-width:2px,color:#000;
-  classDef app fill:#e0f7ea,stroke:#1a5f3f,stroke-width:2px,color:#000;
+    subgraph Data and Modeling
+        direction LR
+        A[Raw Data] --> B[Preprocessing] --> C[Modeling]
+    end
+    subgraph Deployment and Dashboard
+        direction LR
+        D[Visualization] --> E[Streamlit App] --> F[Deployment]
+    end
+    C --> D
 ```
 
+## ⚓ Tools Used
+- Pandas
+- Numpy
+- Streamlit
+- Plotly
+- Pipeline
+- GridSearchCV
+- RandomForest (Predicting)
+- K-Means (Clustering)
+
+## 🚨 Live App
+Click [this](https://shopping-trend-dashboard.streamlit.app/) to watch the live app on streamlit.io.
+
+## Future Improvements
+- Developing segmentation and prediction features on the app
+
+## 📲 Contact
+Please feel free to contact me if you have any questions or feedback:
+- **Email**: [My Email](muhamadsalimalwan10@gmail.com)
+- **LinkedIn**: [My LinkedIn](https://www.linkedin.com/in/muhamad-salim-alwan/)
+- **GitHub**: [My GitHub](https://github.com/salim23-png)
+- **Instagram**: [My Instagram](https://www.instagram.com/salim.cloud)
+- **Medium**: [My Medium](https://medium.com/@muhamadsalimalwan10)
+- **Kaggle**: [My Kaggle](https://www.kaggle.com/muhamadsalimalwan)
+
+---
+
+Thank you for checking out this project! I hope you find it insightful😇
