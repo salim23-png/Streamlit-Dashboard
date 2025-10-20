@@ -9,7 +9,7 @@ flowchart LR
   %% Baris atas
   A[Raw Data] --> B[Data Preprocessing]
   B --> C[Data Cleaning]
-  C --> D[Exploratory Data Analysis (EDA)]
+  C --> D[Exploratory Data Analysis]
   D --> E[Train-Test Split]
   E --> F[Model Selection & Hyperparameter Tuning]
   F --> G[Build Final Predictive Model (Random Forest)]
