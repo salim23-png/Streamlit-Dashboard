@@ -2,14 +2,14 @@
 
 The dataset used is sourced from Kaggle, titled "Customer Shopping Trends Dataset", which can be accessed via [this link](https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset). The dataset contains various information about consumer behavior and purchasing patterns, including information about consumer age and gender, store location, purchasing season, payment type, delivery type, and so on.
 
+## 🔄 Project Workflow
 ```mermaid
-flowchart TD
+flowchart LR
     A[Raw Dataset] --> B[Data Preprocessing]
     B --> C[Feature Engineering]
-    C --> D[Model Training]
-    D --> E[Model Evaluation]
-    E --> F[Deployment on Streamlit]
-
+    C --> D[Visualization]
+    D --> E[Streamlit App Development]
+    E --> F[Interactive Dashboard Deployment]
 ```
 
 
@@ -36,4 +36,5 @@ Feature Information
 | 16 | Previous Purchases        | int64      | Total count of past transactions by the customer (excluding the current one)                      |
 | 17 | Payment Method            | object     | Customer’s most preferred payment method                                                          |
 | 18 | Frequency of Purchases    | object     | Frequency at which the customer makes purchases (e.g., Weekly, Fortnightly, Monthly)              |
+
 
