@@ -9,7 +9,7 @@ flowchart LR
   %% Baris atas: Notebook (warna biru muda)
   A[Raw Data]:::notebook --> B[Data Preprocessing]:::notebook
   B --> C[Data Cleaning]:::notebook
-  C --> D[Exploratory Data Analysis (EDA)]:::notebook
+  C --> D[Exploratory Data Analysis]:::notebook
   D --> E[Train-Test Split]:::notebook
   E --> F[Model Selection & Hyperparameter Tuning]:::notebook
   F --> G[Build Final Predictive Model (Random Forest)]:::notebook
