@@ -2,19 +2,7 @@
 
 The dataset used is sourced from Kaggle, titled "Customer Shopping Trends Dataset", which can be accessed via [this link](https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset). The dataset contains various information about consumer behavior and purchasing patterns, including information about consumer age and gender, store location, purchasing season, payment type, delivery type, and so on.
 
-## 🔄 Project Workflow
-```mermaid
-flowchart LR
-    A[Raw Dataset] --> B[Data Preprocessing]
-    B --> C[Feature Engineering]
-    C --> D[Visualization]
-    D --> E[Streamlit App Development]
-    E --> F[Interactive Dashboard Deployment]
-```
-
-
-
-Feature Information
+## 🔍Feature Information
 
 | No | Feature Name             | Data Type | Description                                                                                       |
 |----|---------------------------|------------|---------------------------------------------------------------------------------------------------|
@@ -36,5 +24,37 @@ Feature Information
 | 16 | Previous Purchases        | int64      | Total count of past transactions by the customer (excluding the current one)                      |
 | 17 | Payment Method            | object     | Customer’s most preferred payment method                                                          |
 | 18 | Frequency of Purchases    | object     | Frequency at which the customer makes purchases (e.g., Weekly, Fortnightly, Monthly)              |
+
+## 🔄 Project Workflow
+```mermaid
+flowchart LR
+    A[Raw Dataset] --> B[Data Preprocessing]
+    B --> C[Feature Engineering]
+    C --> D[Visualization]
+    D --> E[Streamlit App Development]
+    E --> F[Interactive Dashboard Deployment]
+```
+
+## ⚓ Tools Used
+- Pandas
+- Numpy
+- Streamlit
+- Plotly
+
+## 🚨 Live App
+Click [this](https://shopping-trend-dashboard.streamlit.app/) to watch the live app on streamlit.io.
+
+## 📲 Contact
+Please feel free to contact me if you have any questions or feedback:
+- **Email**: [My Email](muhamadsalimalwan10@gmail.com)
+- **LinkedIn**: [My LinkedIn](https://www.linkedin.com/in/muhamad-salim-alwan/)
+- **GitHub**: [My GitHub](https://github.com/salim23-png)
+- **Instagram**: [My Instagram](https://www.instagram.com/salim.cloud)
+- **Medium**: [My Medium](https://medium.com/@muhamadsalimalwan10)
+- **Kaggle**: [My Kaggle](https://www.kaggle.com/muhamadsalimalwan)
+
+---
+
+Thank you for checking out this project! I hope you find it insightful😇
 
 
