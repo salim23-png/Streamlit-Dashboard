@@ -12,9 +12,9 @@ flowchart LR
   C --> D[Exploratory Data Analysis]:::notebook
   D --> E[Train-Test Split]:::notebook
   E --> F[Model Selection & Hyperparameter Tuning]:::notebook
-  F --> G[Build Final Predictive Model (Random Forest)]:::notebook
+  F --> G[Build Final Predictive Model]:::notebook
   G --> H[Model Evaluation]:::notebook
-  H --> I[Clustering Analysis (K-Means)]:::notebook
+  H --> I[Clustering Analysis with K-Means]:::notebook
 
   %% Transisi
   I -.-> J[Visualization & Insights]:::app
